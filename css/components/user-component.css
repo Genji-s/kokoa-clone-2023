@@ -1,0 +1,103 @@
+#just-box-friends {
+    width: 100%;
+    height: 187px;
+    background-color: white;
+}
+
+#just-box-chats {
+    width: 100%;
+    height: 140px;
+    background-color: white;
+}
+
+#just-box-more {
+    width: 100%;
+    height: 140px;
+    background-color: white;    
+}
+
+#just-box-alt {
+    width: 100%;
+    height: 42px; 
+    background-color: white;
+}
+
+.friends-screen {
+    padding: 0px var(--horizontal-space);
+}
+
+.user-component {
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.user-component:hover {
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.user-component,
+.user-component__column:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.user-component__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.user-component__title {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.user-component__subtitle {
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__avatar--xl {
+    width: 80px;
+    height: 80px;
+    transition: all 1s ease-in-out;    
+}
+
+.user-component__avatar--xl:hover {
+    transform: scale(1.5);
+}
+
+.user-component__avatar--xl:active {
+    /* cascading 효과로 sacle(1.5)는 실행되지 않는다. */
+    transform: scale(1.5);          
+    transform: translateX(100%);
+}
+
+.user-component__avatar--sm {
+    width: 60px;
+    height: 60px; 
+    border-radius: 25px; 
+}
+
+.user-component__avatar--sm:active {
+    animation: ninja 2s ease-in-out;
+}
+
+.user-component__title--not-bold {
+    font-weight: 400;
+}
+
+.user-component__column:last-child {
+    color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-component__time {
+    margin-bottom: 10px;
+    display: block;
+}
+

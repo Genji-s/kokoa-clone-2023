@@ -1,0 +1,23 @@
+@keyframes move-left {
+    0% {}
+    50% {
+        transition: translateX(100%);
+    }
+    100% {}
+}
+
+@keyframes ninja {
+    0% {}
+    25% {
+        transform: scale(2) rotateZ(-60deg) translateY(200px);
+    }
+    50% {
+        transform: scale(2) rotateZ(-120deg) translateY(200px) translateX(200px);
+    }
+    75% {
+        transform: scale(2) rotateX(180deg) translateX(200px) translateY(0px);
+    }
+    100% {
+        transform: scale(2) rotateY(240deg) translateX(0px) translateY(0px);
+    }
+}
